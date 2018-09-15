@@ -8,8 +8,8 @@
 RemoteDebug Debug;
 hw_timer_t * hw_timer= NULL;
 
-const char* ssid       = "Shreeji";
-const char* password   = "8866551417Cc";
+const char *ssid = "SSID";
+const char *password = "PWD";
 
 boolean flag_1sec=false;
 
@@ -42,7 +42,7 @@ void setup(){
     Timer_init();
     Debug.begin("ESP32");
     timerAlarmEnable(hw_timer); // start timer
-    
+
 }
 void loop(){
     if(flag_1sec){
